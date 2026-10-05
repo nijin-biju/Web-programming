@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BIODATA</title>
+<style>
+h1{
+	text-align:center;
+	color:red;
+	}
+	body{
+	background:yellow;	
+	}
+h2{
+color:white;
+background:orange;
+</style>
+</head>
+<body>
+<h1>MODI JI</h1>
+<hr>
+<h2>Personal Details</h2>
+<p>Narendra Modi is the current Prime Minister of India, serving in his third consecutive term since May 2014</p>
+<h2>Educational Details</h2>
+<p>SSLC with tea shop experience</p>
+<h2>Hobbies</h2>
+<ul>
+<li>Cheating in election</li>
+<li>fight with rahul gandhi</li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>	
+<h4>Contact Details</h4>
+<p>ph no : 9988776655</p>
+<p>email : modijilotus@gmail.com</p>
+
+
+

@@ -1,0 +1,45 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+p {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    padding: 15px;
+    border: 2px solid blue;
+}
+
+
+.class-selector {
+    font-family: Georgia, serif;
+    background-color: lightgreen;
+    padding: 15px;
+    border: 2px solid green;
+}
+
+
+#id-selector {
+    font-family: "Courier New", monospace;
+    background-color: lightyellow;
+    padding: 15px;
+    border: 2px solid orange;
+}
+
+
+.group-selector, h1 {
+    font-family: Verdana, sans-serif;
+    background-color: lightpink;
+    padding: 15px;
+    border: 2px solid red;
+}
+
+
+.universal-selector {
+    font-family: "Times New Roman", serif;
+    background-color: lavender;
+    padding: 15px;
+    border: 2px solid purple;
+}
+

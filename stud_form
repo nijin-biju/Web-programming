@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<title>Student Registration Form</title>
+</head>
+<body>
+<form>
+<h1 align=center> STUDENT REGISTRATION FORM</h1>
+ <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <br>
+<p>Address:</p>
+    <textarea rows="5" cols="15"></textarea>
+
+    <br><br>
+<label for="phone">Ph no:</label>
+<input
+  type="tel"
+  id="phone"
+  name="phone"
+  maxlength="10"
+  pattern="[1-9]{10}"
+  inputmode="numeric"
+  required
+  oninput="this.value = this.value.replace(/[^1-9]/g, '')"
+>
+    <p>Select your gender:</p>
+
+  <label>
+    <input type="radio" name="gender" value="male">
+    Male
+  </label>
+
+  <label>
+    <input type="radio" name="gender" value="female">
+    Female
+  </label>
+
+  <label>
+    <input type="radio" name="gender" value="other">
+    Other
+  </label>
+
+    <br><br>
+<label for="Qualification">Choose your Qualification:</label>
+
+<select id="Qualification" name="Qualification">
+  <option value="">-- Select --</option>
+  <option value="SSLC">SSLC</option>
+  <option value="PLUS TWO">PLUS TWO</option>
+  <option value="DEGREE">DEGREE</option>
+</select>
+
+<br><br>
+<label for="transfer">Date of transfer:</label>
+    <input type="date" id="transfer" name="transfer" 	>
+<br><br>
+
+<label for="Course">Course Selection:</label>
+
+<select id="Course" name="Course">
+  <option value="">-- Select --</option>
+  <option value="BCA">BCA</option>
+  <option value="MCA">MCA</option>
+</select>
+
+<br><br>
+
+
+
+<label for="upload">File upload:</label>
+ 	    <input type="file" value="file upload">
+
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+
+    <br><br>
+
+    <input type="submit" value="Submit">
+<button type="reset">Clear</button>
+</form>
+</body>
+</html>	
+
