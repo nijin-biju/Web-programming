@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Tree</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8f0;
+        }
+
+        h1 {
+            color: darkgreen;
+        }
+
+        .tree-container {
+            position: relative;
+            width: 490px;
+            margin: auto;
+        }
+
+        .tree-container img {
+            width: 490px;
+            height: 600px;
+        }
+
+        /* Hide radio buttons */
+        input[type="radio"] {
+            display: none;
+        }
+
+        /* Clickable tree areas */
+        .click-area {
+            position: absolute;
+            cursor: pointer;
+            display: block;
+        }
+
+        .leaves {
+            top: 10px;
+            left: 10px;
+            width: 470px;
+            height: 250px;
+        }
+
+        .branches {
+            top: 150px;
+            left: 170px;
+            width: 200px;
+            height: 100px;
+        }
+
+        .trunk {
+            top: 200px;
+            left: 215px;
+            width: 65px;
+            height: 200px;
+        }
+
+        .roots {
+            top: 390px;
+            left: 50px;
+            width: 400px;
+            height: 200px;
+        }
+
+        /* Details section */
+        .details {
+            display: none;
+            width: 80%;
+            max-width: 600px;
+            margin: 25px auto;
+            padding: 20px;
+            background: white;
+            border: 2px solid green;
+            border-radius: 10px;
+        }
+
+        .details img {
+            width: 220px;
+            height: auto;
+        }
+
+        /* Show selected details */
+        #showLeaves:checked ~ .information #leafInfo,
+        #showBranches:checked ~ .information #branchInfo,
+        #showTrunk:checked ~ .information #trunkInfo,
+        #showRoots:checked ~ .information #rootInfo {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Interactive Tree Image Map</h1>
+
+    <p>Click on any part of the tree to view its details below.</p>
+
+    <input type="radio" name="treePart" id="showLeaves">
+    <input type="radio" name="treePart" id="showBranches">
+    <input type="radio" name="treePart" id="showTrunk">
+    <input type="radio" name="treePart" id="showRoots">
+
+    <div class="tree-container">
+
+        <img src="/home/s1mcabatch2/Downloads/Tree.jpeg" alt="Tree">
+
+        <label for="showLeaves"
+               class="click-area leaves"
+               title="Click to view leaves details"></label>
+
+        <label for="showBranches"
+               class="click-area branches"
+               title="Click to view branches details"></label>
+
+        <label for="showTrunk"
+               class="click-area trunk"
+               title="Click to view trunk details"></label>
+
+        <label for="showRoots"
+               class="click-area roots"
+               title="Click to view roots details"></label>
+
+    </div>
+
+    <div class="information">
+
+        <!-- Leaves Information -->
+        <div class="details" id="leafInfo">
+
+            <h2>Leaves of a Tree</h2>
+
+            <img src="/home/s1mcabatch2/Downloads/leaves.jpeg" alt="Tree leaves">
+
+            <p>Leaves prepare food for the tree through photosynthesis.</p>
+
+            <ul style="text-align:left">
+                <li>Absorb sunlight.</li>
+                <li>Prepare food through photosynthesis.</li>
+                <li>Exchange gases with the atmosphere.</li>
+                <li>Release water vapour through transpiration.</li>
+            </ul>
+
+        </div>
+
+        <!-- Branches Information -->
+        <div class="details" id="branchInfo">
+
+            <h2>Branches of a Tree</h2>
+
+            <img src="/home/s1mcabatch2/Downloads/branches.jpeg" alt="Tree branches">
+
+            <p>Branches grow from the trunk and support the leaves, flowers, and fruits.</p>
+
+            <ul style="text-align:left">
+                <li>Support leaves, flowers, and fruits.</li>
+                <li>Spread leaves to receive sunlight.</li>
+                <li>Help transport water and nutrients.</li>
+            </ul>
+
+        </div>
+
+        <!-- Trunk Information -->
+        <div class="details" id="trunkInfo">
+
+            <h2>Trunk of a Tree</h2>
+
+            <img src="/home/s1mcabatch2/Downloads/trunk.jpeg" alt="Tree trunk">
+
+            <p>The trunk supports the tree and keeps it upright.</p>
+
+            <ul style="text-align:left">
+                <li>Supports the branches.</li>
+                <li>Transports water and minerals.</li>
+                <li>Distributes food throughout the tree.</li>
+            </ul>
+
+        </div>
+
+        <!-- Roots Information -->
+        <div class="details" id="rootInfo">
+
+            <h2>Roots of a Tree</h2>
+
+            <img src="/home/s1mcabatch2/Downloads/roots.jpeg" alt="Tree roots">
+
+            <p>Roots grow mainly underground and absorb water and minerals from the soil.</p>
+
+            <ul style="text-align:left">
+                <li>Absorb water and minerals.</li>
+                <li>Anchor the tree firmly in the soil.</li>
+                <li>Store food.</li>
+                <li>Help prevent soil erosion.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
